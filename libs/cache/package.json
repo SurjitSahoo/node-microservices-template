@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple cache library",
   "author": "Surjit Kumar Sahoo",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
