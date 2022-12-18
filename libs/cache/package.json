@@ -1,0 +1,20 @@
+{
+  "name": "cache",
+  "version": "1.0.0",
+  "description": "A simple cache library",
+  "author": "Surjit Kumar Sahoo",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "cross-env": "^7.0.3",
+    "jest": "^29.3.1"
+  }
+}
