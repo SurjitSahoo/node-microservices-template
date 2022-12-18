@@ -1,0 +1,21 @@
+{
+  "name": "sequelize-config",
+  "version": "1.0.0",
+  "description": "Sequelize configurations",
+  "author": "Surjit Kumar Sahoo",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "try": "node --es-module-specifier-resolution=node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "logger": "*",
+    "pg": "^8.8.0",
+    "sequelize": "^6.26.0"
+  },
+  "engines": {
+    "node": ">=14.5.0"
+  }
+}
