@@ -1,0 +1,60 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "prettier",
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["jest", "spellcheck", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "camelcase": "warn",
+    "no-console": "warn",
+    "max-len": [
+      "warn",
+      {
+        "code": 150,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "prefer-template": "error",
+    "linebreak-style": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "object-curly-newline": "off",
+    "import/prefer-default-export": "off",
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "version": ">=14.5.0",
+        "ignores": ["modules"]
+      }
+    ],
+    "no-underscore-dangle": "off",
+    "node/no-unpublished-import": [
+      "warn",
+      { "allowModules": ["mongodb-memory-server", "supertest", "async"] }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ]
+  }
+}

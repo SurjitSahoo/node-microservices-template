@@ -1,0 +1,11 @@
+{
+  "arrowParens": "avoid",
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "semi": true,
+  "quoteProps": "as-needed",
+  "trailingComma": "all",
+  "endOfLine": "auto",
+  "eslintIntegration": true
+}
