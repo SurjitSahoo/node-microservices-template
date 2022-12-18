@@ -1,0 +1,48 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    container_name: postgres-server
+    restart: always
+    environment:
+      POSTGRES_USER: node_user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: node_test
+
+    ports:
+      - 5432:5432
+
+  pgAdmin:
+    image: dpage/pgadmin4
+    container_name: pgAdmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: 'db@node.com'
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - 8080:80
+
+  # db:
+  #   image: mysql
+  #   container_name: mysql-server
+  #   # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+  #   # (this is just an example, not intended to be a production configuration)
+  #   # command: --default-authentication-plugin=mysql_native_password
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: password
+  #     MYSQL_DATABASE: test
+  #   ports:
+  #     - 3306:3306
+
+  # phpmyadmin:
+  #   image: phpmyadmin
+  #   container_name: phpmyadmin
+  #   restart: always
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     # - PMA_ARBITRARY=1
+  #     - PMA_HOST=db
