@@ -1,0 +1,19 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "authentication and authorization",
+  "author": "Surjit Kumar Sahoo",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "dependencies": {
+    "jose": "^4.11.1",
+    "constants": "*"
+  }
+}
