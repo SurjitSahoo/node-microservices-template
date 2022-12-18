@@ -1,0 +1,7 @@
+{
+  "ignore": [
+    "swagger.json",
+    "README",
+    "*.test.js"
+  ]
+}

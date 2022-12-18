@@ -1,0 +1,33 @@
+{
+  "name": "example-app1",
+  "version": "1.0.0",
+  "description": "Example microservice app1",
+  "author": "Surjit Kumar Sahoo",
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --es-module-specifier-resolution=node src/index.js",
+    "start:dev": "cross-env NODE_ENV=local nodemon --es-module-specifier-resolution=node"
+  },
+  "dependencies": {
+    "auth": "*",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "envalid": "^7.3.1",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "logger": "*",
+    "sequelize-config": "*",
+    "constants": "*"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": ">=14.5.0"
+  }
+}
