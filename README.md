@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">Node.JS Microservices Template</h1>
+<h1 align="center">Node.JS Microservices Template</h1>
 
 - A template to quickly spin-up multiple microservices node applications.
 - We get to share eslint and prettier configs across all of our libs and apps
