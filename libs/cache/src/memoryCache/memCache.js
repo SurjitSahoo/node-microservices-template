@@ -20,7 +20,7 @@ export class Cache {
   #logger = console;
 
   /**
-   * @param {object=} config - Optional Config options
+   * @param {object} [config] - Optional Config options
    * @param {object} config.logger - A logger instance which must have .log method in it
    * @param {boolean} config.debug - Enable debug mode
    */
@@ -93,6 +93,10 @@ export class Cache {
     return value;
   }
 
+  /**
+   *
+   * @param {string} key
+   */
   #del(key) {
     this.#size -= 1;
     delete this.#cache[key];
@@ -135,6 +139,11 @@ export class Cache {
     }
   }
 
+  /**
+   * Get Cached data
+   * @param {string} key
+   * @returns {any}
+   */
   get(key) {
     const data = this.#cache[key];
     if (data) {
@@ -152,6 +161,9 @@ export class Cache {
     return null;
   }
 
+  /**
+   * Count the cache size
+   */
   get size() {
     return this.#size;
   }
