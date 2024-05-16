@@ -1,7 +1,7 @@
 {
   "name": "@surjit/cache",
   "version": "0.0.3",
-  "description": "A simple cache library",
+  "description": "A simple and fast in-memory caching library for javascript",
   "author": "Surjit Kumar Sahoo",
   "license": "MIT",
   "main": "dist/index.js",
@@ -11,7 +11,25 @@
     "cache",
     "javascript-cache",
     "memcache",
-    "cache.js"
+    "cache.js",
+    "memcached",
+    "node",
+    "memory",
+    "caching",
+    "cache-js",
+    "internal"
+  ],
+  "tags": [
+    "cache",
+    "javascript-cache",
+    "memcache",
+    "cache.js",
+    "memcached",
+    "node",
+    "memory",
+    "caching",
+    "cache-js",
+    "internal"
   ],
   "repository": {
     "url": "https://github.com/SurjitSahoo/node-microservices-template.git",

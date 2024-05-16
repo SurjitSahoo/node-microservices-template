@@ -40,7 +40,7 @@ export class Cache {
 
   /**
    * Add item to the cache
-   * @param {string} key
+   * @param {any} key
    * @param {any} value
    * @param {number=} time - in milliseconds
    * @param {cacheTimeoutCallback=} timeoutCallback
