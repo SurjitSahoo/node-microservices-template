@@ -50,7 +50,7 @@ jobs:
         run: cd libs/cache && npm run build
 
       - name: Publish
-        uses: mikeal/merge-release@master
+        uses: Github-Actions-Community/merge-release@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
